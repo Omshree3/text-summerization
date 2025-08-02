@@ -1,45 +1,16 @@
-# TextSummerizerEndToEnd
-An End to End text summarize project
+# 📝 Smart_summerizer
+
+This is an end-to-end project that automatically summarizes large chunks of text using the **Pegasus model** from Hugging Face Transformers. It covers the full pipeline — from data ingestion to model training and deployment.
+
+---
+
+## 🚀 Features
+- Ingests and processes large-scale dialogue/text datasets
+- Fine-tunes the Pegasus summarization model (`google/pegasus-cnn_dailymail`)
+- Provides a FastAPI-based web interface for inference
+- Modular pipeline with YAML configuration and parameter files
+- Uses Hugging Face Transformers, Datasets, and Trainer APIs
+
+---
 
 
-## Workflows
-Update the followings
-1.  config/config.yaml
-2.  params.yaml
-3.  src/TextSummarizer/entity
-4.  configuration manager in src/TextSummarizer/config
-5.  src/TextSummarizer/components
-6.  src/TextSummarizer/pipeline
-7.  main.py
-8.   app.py
-
-
-# How to run?
-### STEPS:
-
-Clone the repository
-
-```bash
-https://github.com/durgeshmca/TextSummerizerEndToEnd
-```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create --prefix ./env summary python=3.11 -y
-```
-
-```bash
-conda activate ./env
-```
-
-
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-
-```bashSS
-# Finally run the following command
-python app.py
-```
